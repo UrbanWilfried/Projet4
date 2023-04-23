@@ -2,17 +2,10 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  margin: 0;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-}
-header img {
-  width: 162px;
-  margin: 14px 0;
+.form-button {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
 }
 
 form {
@@ -32,6 +25,19 @@ form .form-content-icon {
 }
 form .form-content-txt {
   font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 162px;
+  margin: 14px 0;
 }
 
 .titre {
