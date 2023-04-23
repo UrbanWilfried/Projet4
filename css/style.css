@@ -1,0 +1,58 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 162px;
+  margin: 14px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form .form-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
+}
+form .form-content-icon {
+  width: 12px;
+  height: 16px;
+  margin: 4px 17px 0;
+}
+form .form-content-txt {
+  font-size: 16px;
+}
+
+.titre {
+  display: flex;
+  justify-content: center;
+}
+
+form h2 {
+  width: 275px;
+  font-weight: 700;
+  height: 68px;
+  text-align: center;
+  margin: 39px 0 0;
+}
+
+form p {
+  font-size: 18px;
+  width: 315px;
+  height: 46px;
+  text-align: center;
+  margin: 0 0 27px;
+}
+
+/*# sourceMappingURL=style.css.map */

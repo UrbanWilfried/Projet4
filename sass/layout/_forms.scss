@@ -1,0 +1,18 @@
+form {
+    display: flex;
+    flex-direction: column;
+    .form-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px;
+        &-icon {
+            width: 12px;
+            height: 16px;
+            margin: 4px 17px 0;
+        }
+        &-txt {
+            font-size: 16px;
+        }
+    }
+}
