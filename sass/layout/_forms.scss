@@ -6,13 +6,16 @@ form {
         flex-direction: row;
         justify-content: center;
         padding: 15px;
+        background: $colour-form;
         &-icon {
             width: 12px;
             height: 16px;
-            margin: 4px 17px 0;
+            margin-right: 17px;
         }
         &-txt {
             font-size: 16px;
+            border: none;
+            background: $colour-form;
         }
     }
 }

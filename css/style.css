@@ -2,10 +2,18 @@
   font-family: "Roboto", sans-serif;
 }
 
+form button {
+  border: none;
+  margin-bottom: 57px;
+}
+
 .form-button {
   width: 218px;
   height: 50px;
+  font-size: 16px;
+  color: #FFFFFF;
   border-radius: 25px;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
 }
 
 form {
@@ -17,23 +25,30 @@ form .form-content {
   flex-direction: row;
   justify-content: center;
   padding: 15px;
+  background: #EAEAEA;
 }
 form .form-content-icon {
   width: 12px;
   height: 16px;
-  margin: 4px 17px 0;
+  margin-right: 17px;
 }
 form .form-content-txt {
   font-size: 16px;
+  border: none;
+  background: #EAEAEA;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
 header {
   display: flex;
   justify-content: center;
+  z-index: 1;
+  box-shadow: 0px 2px 4px #262626;
 }
 header img {
   width: 162px;
@@ -59,6 +74,15 @@ form p {
   height: 46px;
   text-align: center;
   margin: 0 0 27px;
+}
+
+.fonction h2 {
+  margin: 48px 0 26px 20px;
+}
+
+.fonction-flex {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
