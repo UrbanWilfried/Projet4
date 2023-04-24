@@ -1,12 +1,29 @@
-form button {
-    border: none;
-    margin-bottom: 57px;
+form {
+    button {
+        border: none;
+        margin-bottom: 57px;
+    }
 }
-.form-button {
-    width: 218px;
-    height: 50px;
-    font-size: 16px;
-    color: $colour-white;
-    border-radius: 25px;
-    background: linear-gradient(to top, $colour-primaire, $colour-secondaire);
+.form {
+    &__button {
+        width: 218px;
+        height: 50px;
+        font-size: 16px;
+        color: $color-white;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(to top, $color-primaire, $color-secondaire);
+        box-shadow: 0px 4px 10px lighten($color-black, 25%);
+    }
+}
+.functioning {
+    button {
+        display: flex;
+        align-items: center;
+        height: 72px;
+        border: none;
+        border-radius: 20px;
+        box-shadow:  0px 4px 15px lighten($color-black, 15%) ;
+        margin-bottom: 25px;
+    }
 }

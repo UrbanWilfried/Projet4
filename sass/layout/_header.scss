@@ -6,10 +6,11 @@ body {
 header {
     display: flex;
     justify-content: center;
+    height: 63px;
     z-index: 1;
-    box-shadow: 0px 2px 4px lighten($colour-black, 15%) ;
+    box-shadow: 0px 2px 4px lighten($color-black, 15%);
     img {
         width: 162px;
-        margin: 14px 0;
+        margin-top: 23px;
     }
 }

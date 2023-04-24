@@ -1,21 +1,24 @@
 form {
     display: flex;
     flex-direction: column;
-    .form-content {
+}
+.form {
+    &__content {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding: 15px;
-        background: $colour-form;
-        &-icon {
+        background: $color-form;
+        &__icon {
             width: 12px;
             height: 16px;
             margin-right: 17px;
         }
-        &-txt {
+        &__text {
             font-size: 16px;
             border: none;
-            background: $colour-form;
+            background: $color-form;
+            width: 109px;
         }
     }
 }

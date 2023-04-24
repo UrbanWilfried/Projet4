@@ -1,25 +1,53 @@
-.titre {
+form .title, .text {
     display: flex;
     justify-content: center;
 }
-form h2 {
-    width: 275px;
-    font-weight: 700;
-    height: 68px;
-    text-align: center;
-    margin: 39px 0 0;
+form {
+    h2 {
+        width: 275px;
+        font-weight: 700;
+        height: 68px;
+        text-align: center;
+        margin: 39px 0 0;
+    }
+    p {
+        font-size: 18px;
+        width: 315px;
+        height: 46px;
+        text-align: center;
+        margin: 0 0 27px;
+    }
 }
-form p {
-    font-size: 18px;
-    width: 315px;
-    height: 46px;
-    text-align: center;
-    margin: 0 0 27px;
-}
-.fonction h2 {
+.functioning {
+    h2 {
     margin: 48px 0 26px 20px;
-}
-.fonction-flex {
-    display: flex;
-    flex-direction: column;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px 43px 32px;
+        button > p {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        i {
+            font-size: 18px;
+            color: $color-primaire;
+            margin-right: 20px;
+        }
+        &__number {
+            font-size: 14px;
+            color: $color-white;
+            width: 24px;
+            height: 24px;
+            background: $color-primaire;
+            border: none;
+            border-radius: 12px;
+            position: relative;
+            right: 18px;
+            p {
+                margin-top: 5px;
+            }
+        }
+    }
 }

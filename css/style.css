@@ -7,35 +7,74 @@ form button {
   margin-bottom: 57px;
 }
 
-.form-button {
+.form__button {
   width: 218px;
   height: 50px;
   font-size: 16px;
   color: #FFFFFF;
+  border: none;
   border-radius: 25px;
   background: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 0px 4px 10px #404040;
+}
+
+.functioning button {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px #262626;
+  margin-bottom: 25px;
+}
+
+footer {
+  background: #353535;
+  padding: 22px 25px;
+}
+footer img {
+  font-size: 18px;
+  width: 100px;
+  margin-bottom: 16px;
+  filter: invert(100%);
+}
+footer .nav__text {
+  margin-bottom: 7px;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+}
+footer i {
+  font-size: 11px;
+  width: 8px;
+  color: #FFFFFF;
+  margin-right: 11px;
 }
 
 form {
   display: flex;
   flex-direction: column;
 }
-form .form-content {
+
+.form__content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 15px;
   background: #EAEAEA;
 }
-form .form-content-icon {
+.form__content__icon {
   width: 12px;
   height: 16px;
   margin-right: 17px;
 }
-form .form-content-txt {
+.form__content__text {
   font-size: 16px;
   border: none;
   background: #EAEAEA;
+  width: 109px;
 }
 
 body {
@@ -47,15 +86,16 @@ body {
 header {
   display: flex;
   justify-content: center;
+  height: 63px;
   z-index: 1;
   box-shadow: 0px 2px 4px #262626;
 }
 header img {
   width: 162px;
-  margin: 14px 0;
+  margin-top: 23px;
 }
 
-.titre {
+form .title, .text {
   display: flex;
   justify-content: center;
 }
@@ -67,7 +107,6 @@ form h2 {
   text-align: center;
   margin: 39px 0 0;
 }
-
 form p {
   font-size: 18px;
   width: 315px;
@@ -76,13 +115,36 @@ form p {
   margin: 0 0 27px;
 }
 
-.fonction h2 {
+.functioning h2 {
   margin: 48px 0 26px 20px;
 }
-
-.fonction-flex {
+.functioning__content {
   display: flex;
   flex-direction: column;
+  margin: 0 20px 43px 32px;
+}
+.functioning__content button > p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.functioning__content i {
+  font-size: 18px;
+  color: #9356DC;
+  margin-right: 20px;
+}
+.functioning__content__number {
+  font-size: 14px;
+  color: #FFFFFF;
+  width: 24px;
+  height: 24px;
+  background: #9356DC;
+  border: none;
+  border-radius: 12px;
+  position: relative;
+  right: 18px;
+}
+.functioning__content__number p {
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
