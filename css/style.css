@@ -5,6 +5,7 @@
 form button {
   border: none;
   margin-bottom: 57px;
+  background: #D2D2D2;
 }
 
 .form__button {
@@ -81,6 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  background: #D2D2D2;
 }
 
 header {
@@ -115,8 +117,12 @@ form p {
   margin: 0 0 27px;
 }
 
+.functioning {
+  background: #FFFFFF;
+}
 .functioning h2 {
-  margin: 48px 0 26px 20px;
+  margin: 0 0 26px 20px;
+  padding-top: 48px;
 }
 .functioning__content {
   display: flex;
@@ -145,6 +151,48 @@ form p {
 }
 .functioning__content__number p {
   margin-top: 5px;
+}
+
+.restaurant h2 {
+  margin: 54px 0 20px 20px;
+}
+.restaurant section img {
+  height: 174px;
+  width: 91%;
+  margin: 0 17px;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant__card__content {
+  height: 77px;
+  width: 91%;
+  margin: 0 17px 17px;
+  border-radius: 0 0 15px 15px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+.restaurant__card__content__list {
+  width: 50%;
+  margin-left: 13px;
+}
+.restaurant__card__content__list h3 {
+  margin: 0;
+  padding-top: 16px;
+}
+.restaurant__card__content__list p {
+  margin-top: 5px;
+}
+.restaurant__card__content__item {
+  width: 50%;
+  margin-top: 23px;
+}
+.restaurant__card__content i {
+  font-size: 22px;
+  margin-left: 123px;
 }
 
 /*# sourceMappingURL=style.css.map */
