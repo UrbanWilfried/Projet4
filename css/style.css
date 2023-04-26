@@ -1,11 +1,16 @@
 * {
+  margin: 0;
+  padding: 0;
+}
+
+* {
   font-family: "Roboto", sans-serif;
 }
 
 form button {
   border: none;
   margin-bottom: 57px;
-  background: #D2D2D2;
+  background: #F7F7F7;
 }
 
 .form__button {
@@ -81,8 +86,7 @@ form {
 body {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  background: #D2D2D2;
+  background: #F7F7F7;
 }
 
 header {
@@ -162,7 +166,6 @@ form p {
 }
 .restaurant section img {
   height: 174px;
-  width: 91%;
   margin: 0 17px;
   border-radius: 15px 15px 0 0;
 }
@@ -172,7 +175,6 @@ form p {
 }
 .restaurant__card__content {
   height: 77px;
-  width: 91%;
   margin: 0 17px 17px;
   border-radius: 0 0 15px 15px;
   background: #FFFFFF;
@@ -180,23 +182,110 @@ form p {
   flex-direction: row;
 }
 .restaurant__card__content__list {
-  width: 50%;
+  width: 80%;
   margin-left: 13px;
 }
 .restaurant__card__content__list h3 {
-  margin: 0;
   padding-top: 16px;
 }
 .restaurant__card__content__list p {
   margin-top: 5px;
 }
 .restaurant__card__content__item {
-  width: 50%;
-  margin-top: 23px;
+  width: 20%;
 }
 .restaurant__card__content i {
   font-size: 22px;
-  margin-left: 123px;
+  margin: 23px 25px 0 0;
+  float: right;
+}
+
+.fond img {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #F7F7F7;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  bottom: 75px;
+}
+.card__title {
+  display: flex;
+}
+.card h1 {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Shrikhand";
+  width: 90%;
+  margin: 32px 0 0 17px;
+}
+.card i {
+  font-size: 22px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 40px 41px 0 0;
+  width: 10%;
+  float: right;
+}
+.card__menu {
+  margin: 0 13px;
+}
+.card__menu h2 {
+  margin: 40px 0 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+.card__menu section > p {
+  color: #F7F7F7;
+  width: 40px;
+  height: 6px;
+  border-bottom: 3px solid #99E2D0;
+}
+.card__menu__content {
+  display: flex;
+  width: 100%;
+  background: #FFFFFF;
+  margin-top: 12px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #1a1a1a;
+}
+.card__menu__content__list {
+  width: 90%;
+}
+.card__menu__content__list h3 {
+  font-size: 18px;
+  margin: 12px 0 0 15px;
+}
+.card__menu__content__list > p {
+  font-size: 15px;
+  margin: 5px 0 12px 15px;
+}
+.card__menu__content__price {
+  width: 10%;
+}
+.card__menu__content__price > p {
+  font-size: 15px;
+  margin: 37px 15px 0 0;
+  float: right;
+}
+.card button {
+  position: relative;
+  top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  position: relative;
+  bottom: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

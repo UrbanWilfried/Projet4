@@ -3,3 +3,85 @@
         width: 100%;
     }
 }
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: $color-body;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    bottom: 75px;
+    &__title {
+        display: flex;
+    }
+        h1 {
+            font-size: 28px;
+            font-weight: 400;
+            font-family: $fond-family-title;
+            width: 90%;
+            margin: 32px 0 0 17px;
+        }
+        i {
+            font-size: 22px;
+            display: flex;
+            justify-content: flex-end;
+            margin: 40px 41px 0 0;
+            width: 10%;
+            float: right;
+        }
+    &__menu {
+        margin: 0 13px;
+        h2 {
+            margin: 40px 0 0;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        section > p {
+            color: $color-body;
+            width: 40px;
+            height: 6px;
+            border-bottom: 3px solid $color-tertiaire;
+        }
+        &__content {
+            display: flex;
+            width: 100%;
+            background: $color-white;
+            margin-top: 12px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px lighten($color-black, 10%);
+            &__list {
+                width: 90%;
+                h3 {
+                    font-size: 18px;
+                    margin: 12px 0 0 15px;
+                }
+                > p {
+                    font-size: 15px;
+                    margin: 5px 0 12px 15px;
+                }
+            }
+            &__price {
+                width: 10%;
+                > p {
+                    font-size: 15px;
+                    margin: 37px 15px 0 0;
+                    float: right;
+                }
+            }
+        }
+    }
+    button {
+        position: relative;
+        top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+footer {
+    position: relative;
+    bottom: 35px;
+}
