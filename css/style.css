@@ -178,6 +178,9 @@ header i, header p {
     padding-top: 40px;
   }
 }
+header p {
+  color: #FFFFFF;
+}
 
 form .title, .text {
   display: flex;
