@@ -1,6 +1,12 @@
 .fond {
     img {
         width: 100%;
+        @media (min-width: 1440px) {
+            height: 418px;
+            object-fit: cover;
+            
+
+        }
     }
 }
 .card {
@@ -10,9 +16,17 @@
     background: $color-body;
     border-radius: 40px 40px 0 0;
     position: relative;
-    bottom: 75px;
+    bottom: 55px;
+    @media (min-width: 1440px) {
+        width: 1055px;
+        margin: auto;
+    }
     &__title {
         display: flex;
+
+        @media (min-width: 1440px) {
+            justify-content: center;
+        }
     }
         h1 {
             font-size: 28px;
@@ -20,6 +34,10 @@
             font-family: $fond-family-title;
             width: 90%;
             margin: 32px 0 0 17px;
+            @media (min-width: 1440px) {
+                width: 261px;
+                margin: 51px 0 0;
+            }
         }
         i {
             font-size: 22px;
@@ -28,9 +46,16 @@
             margin: 40px 41px 0 0;
             width: 10%;
             float: right;
+            @media (min-width: 1440px) {
+                width: 46px;
+                margin: 61px 0 0;
+            }
         }
     &__menu {
         margin: 0 13px;
+        @media (min-width: 1440px) {
+            margin: 0 210px;
+        }
         h2 {
             margin: 40px 0 0;
             font-size: 16px;
@@ -74,14 +99,14 @@
     button {
         position: relative;
         top: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         width: 100%;
         border: none;
         display: flex;
         justify-content: center;
     }
-}
-footer {
-    position: relative;
-    bottom: 35px;
+    footer {
+        position: relative;
+        bottom: 35px;
+    }
 }

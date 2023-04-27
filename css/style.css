@@ -12,6 +12,11 @@ form button {
   margin-bottom: 57px;
   background: #F7F7F7;
 }
+@media (min-width: 1440px) {
+  form button {
+    margin-bottom: 30px;
+  }
+}
 
 .form__button {
   width: 218px;
@@ -33,10 +38,21 @@ form button {
   box-shadow: 0px 4px 15px #262626;
   margin-bottom: 25px;
 }
+@media (min-width: 1440px) {
+  .functioning button {
+    width: 322px;
+    margin-bottom: 0;
+  }
+}
 
 footer {
   background: #353535;
   padding: 22px 25px;
+}
+@media (min-width: 1440px) {
+  footer {
+    padding: 57px 26px 30px;
+  }
 }
 footer img {
   font-size: 18px;
@@ -44,15 +60,48 @@ footer img {
   margin-bottom: 16px;
   filter: invert(100%);
 }
-footer .nav__text {
+@media (min-width: 1440px) {
+  footer img {
+    margin: 0 0 0 13px;
+  }
+}
+@media (min-width: 1440px) {
+  footer nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    display: flex;
+  }
+}
+.footer__nav__text {
   margin-bottom: 7px;
 }
-footer a {
+@media (min-width: 1440px) {
+  .footer__nav__text {
+    width: 190px;
+    margin: 0 3px;
+  }
+  .footer__nav__text__width {
+    width: 130px;
+    margin: 0 3px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__nav__content {
+    display: flex;
+  }
+}
+.footer a {
   color: #FFFFFF;
   text-decoration: none;
   font-size: 16px;
 }
-footer i {
+.footer i {
   font-size: 11px;
   width: 8px;
   color: #FFFFFF;
@@ -96,9 +145,38 @@ header {
   z-index: 1;
   box-shadow: 0px 2px 4px #262626;
 }
+@media (min-width: 1440px) {
+  header {
+    height: 96px;
+  }
+}
 header img {
   width: 162px;
+  height: 27px;
   margin-top: 23px;
+  position: relative;
+  right: 20px;
+}
+@media (min-width: 1440px) {
+  header img {
+    width: 200px;
+    height: 34px;
+    margin-top: 30px;
+  }
+}
+header a {
+  width: 100%;
+  text-align: center;
+}
+header i, header p {
+  color: #000000;
+  padding: 24px 0 0 24px;
+  float: left;
+}
+@media (min-width: 1440px) {
+  header i, header p {
+    padding-top: 40px;
+  }
 }
 
 form .title, .text {
@@ -109,16 +187,27 @@ form .title, .text {
 form h2 {
   width: 275px;
   font-weight: 700;
-  height: 68px;
   text-align: center;
   margin: 39px 0 0;
+}
+@media (min-width: 1440px) {
+  form h2 {
+    width: 645px;
+    font-size: 40px;
+    margin: 30px 0 0;
+  }
 }
 form p {
   font-size: 18px;
   width: 315px;
-  height: 46px;
   text-align: center;
-  margin: 0 0 27px;
+  margin: 0 0 19px;
+}
+@media (min-width: 1440px) {
+  form p {
+    width: 531px;
+    margin: 18px 0 30px;
+  }
 }
 
 .functioning {
@@ -128,10 +217,26 @@ form p {
   margin: 0 0 26px 20px;
   padding-top: 48px;
 }
+@media (min-width: 1440px) {
+  .functioning h2 {
+    width: 1088px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .functioning__content {
   display: flex;
   flex-direction: column;
-  margin: 0 20px 43px 32px;
+  padding: 0 20px 68px 32px;
+}
+@media (min-width: 1440px) {
+  .functioning__content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    width: 1088px;
+    margin: auto;
+  }
 }
 .functioning__content button > p {
   font-size: 16px;
@@ -157,8 +262,27 @@ form p {
   margin-top: 5px;
 }
 
+@media (min-width: 1440px) {
+  .restaurant {
+    width: 1088px;
+    margin: auto;
+  }
+}
 .restaurant h2 {
   margin: 54px 0 20px 20px;
+}
+@media (min-width: 1440px) {
+  .restaurant h2 {
+    margin: 30px 0 0;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurant section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 .restaurant section a {
   color: #000000;
@@ -168,10 +292,23 @@ form p {
   height: 174px;
   margin: 0 17px;
   border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+@media (min-width: 1440px) {
+  .restaurant section img {
+    width: 490px;
+    margin: 0;
+  }
 }
 .restaurant__card {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1440px) {
+  .restaurant__card {
+    width: 490px;
+    margin: 27px 0 30px 0;
+  }
 }
 .restaurant__card__content {
   height: 77px;
@@ -180,6 +317,12 @@ form p {
   background: #FFFFFF;
   display: flex;
   flex-direction: row;
+}
+@media (min-width: 1440px) {
+  .restaurant__card__content {
+    width: 490px;
+    margin: 0;
+  }
 }
 .restaurant__card__content__list {
   width: 80%;
@@ -203,6 +346,12 @@ form p {
 .fond img {
   width: 100%;
 }
+@media (min-width: 1440px) {
+  .fond img {
+    height: 418px;
+    object-fit: cover;
+  }
+}
 
 .card {
   display: flex;
@@ -211,10 +360,21 @@ form p {
   background: #F7F7F7;
   border-radius: 40px 40px 0 0;
   position: relative;
-  bottom: 75px;
+  bottom: 55px;
+}
+@media (min-width: 1440px) {
+  .card {
+    width: 1055px;
+    margin: auto;
+  }
 }
 .card__title {
   display: flex;
+}
+@media (min-width: 1440px) {
+  .card__title {
+    justify-content: center;
+  }
 }
 .card h1 {
   font-size: 28px;
@@ -222,6 +382,12 @@ form p {
   font-family: "Shrikhand";
   width: 90%;
   margin: 32px 0 0 17px;
+}
+@media (min-width: 1440px) {
+  .card h1 {
+    width: 261px;
+    margin: 51px 0 0;
+  }
 }
 .card i {
   font-size: 22px;
@@ -231,8 +397,19 @@ form p {
   width: 10%;
   float: right;
 }
+@media (min-width: 1440px) {
+  .card i {
+    width: 46px;
+    margin: 61px 0 0;
+  }
+}
 .card__menu {
   margin: 0 13px;
+}
+@media (min-width: 1440px) {
+  .card__menu {
+    margin: 0 210px;
+  }
 }
 .card__menu h2 {
   margin: 40px 0 0;
@@ -276,14 +453,13 @@ form p {
 .card button {
   position: relative;
   top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 100%;
   border: none;
   display: flex;
   justify-content: center;
 }
-
-footer {
+.card footer {
   position: relative;
   bottom: 35px;
 }
