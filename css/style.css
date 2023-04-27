@@ -7,13 +7,14 @@
   font-family: "Roboto", sans-serif;
 }
 
-form button {
+.form-button {
   border: none;
   margin-bottom: 57px;
   background: #F7F7F7;
+  text-align: center;
 }
 @media (min-width: 1440px) {
-  form button {
+  .form-button {
     margin-bottom: 30px;
   }
 }
@@ -29,7 +30,7 @@ form button {
   box-shadow: 0px 4px 10px #404040;
 }
 
-.functioning button {
+.functioning-button {
   display: flex;
   align-items: center;
   height: 72px;
@@ -39,7 +40,7 @@ form button {
   margin-bottom: 25px;
 }
 @media (min-width: 1440px) {
-  .functioning button {
+  .functioning-button {
     width: 322px;
     margin-bottom: 0;
   }
@@ -191,7 +192,7 @@ form h2 {
   width: 275px;
   font-weight: 700;
   text-align: center;
-  margin: 39px 0 0;
+  margin: 39px 0 14px;
 }
 @media (min-width: 1440px) {
   form h2 {
@@ -241,10 +242,6 @@ form p {
     margin: auto;
   }
 }
-.functioning__content button > p {
-  font-size: 16px;
-  font-weight: bold;
-}
 .functioning__content i {
   font-size: 18px;
   color: #9356DC;
@@ -262,7 +259,12 @@ form p {
   right: 18px;
 }
 .functioning__content__number p {
-  margin-top: 5px;
+  margin: 4px 0 0 7px;
+}
+
+.functioning-button > p {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 @media (min-width: 1440px) {
@@ -453,7 +455,12 @@ form p {
   margin: 37px 15px 0 0;
   float: right;
 }
-.card button {
+.card footer {
+  position: relative;
+  bottom: 35px;
+}
+
+.card-button {
   position: relative;
   top: 40px;
   margin-bottom: 20px;
@@ -461,10 +468,6 @@ form p {
   border: none;
   display: flex;
   justify-content: center;
-}
-.card footer {
-  position: relative;
-  bottom: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

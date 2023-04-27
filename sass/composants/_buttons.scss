@@ -1,11 +1,10 @@
-form {
-    button {
-        border: none;
-        margin-bottom: 57px;
-        background: $color-body;
-        @media (min-width: 1440px) {
-            margin-bottom: 30px;
-        }
+.form-button {
+    border: none;
+    margin-bottom: 57px;
+    background: $color-body;
+    text-align: center;
+    @media (min-width: 1440px) {
+        margin-bottom: 30px;
     }
 }
 .form {
@@ -20,18 +19,16 @@ form {
         box-shadow: 0px 4px 10px lighten($color-black, 25%);
     }
 }
-.functioning {
-    button {
-        display: flex;
-        align-items: center;
-        height: 72px;
-        border: none;
-        border-radius: 20px;
-        box-shadow:  0px 4px 15px lighten($color-black, 15%) ;
-        margin-bottom: 25px;
-        @media (min-width: 1440px) {
-            width: 322px;
-            margin-bottom: 0;
-        }
+.functioning-button {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    border: none;
+    border-radius: 20px;
+    box-shadow:  0px 4px 15px lighten($color-black, 15%) ;
+    margin-bottom: 25px;
+    @media (min-width: 1440px) {
+        width: 322px;
+        margin-bottom: 0;
     }
 }
