@@ -23,6 +23,8 @@
     }
     &__title {
         display: flex;
+        position: relative;
+        top: 15px;
 
         @media (min-width: 1440px) {
             justify-content: center;
@@ -33,26 +35,28 @@
             font-weight: 400;
             font-family: $fond-family-title;
             width: 90%;
-            margin: 32px 0 0 17px;
+            margin: 17px 0 0 17px;
             @media (min-width: 1440px) {
                 width: 261px;
-                margin: 51px 0 0;
+                margin: 36px 0 0;
             }
         }
         i {
             font-size: 22px;
             display: flex;
             justify-content: flex-end;
-            margin: 40px 41px 0 0;
+            margin: 25px 41px 0 0;
             width: 10%;
             float: right;
             @media (min-width: 1440px) {
                 width: 46px;
-                margin: 61px 0 0;
+                margin: 46px 0 0;
             }
         }
     &__menu {
         margin: 0 13px;
+        position: relative;
+        top: 15px;
         @media (min-width: 1440px) {
             margin: 0 210px;
         }
@@ -74,15 +78,17 @@
             margin-top: 12px;
             border: none;
             border-radius: 15px;
-            box-shadow: 0 4px 15px lighten($color-black, 10%);
+            box-shadow: 0 4.01149px 15.0431px lighten($color-black, 10%);
             &__list {
                 width: 90%;
                 h3 {
                     font-size: 18px;
+                    font-weight: 700;
                     margin: 12px 0 0 15px;
                 }
                 > p {
                     font-size: 15px;
+                    font-weight: 300;
                     margin: 5px 0 12px 15px;
                 }
             }
@@ -90,23 +96,11 @@
                 width: 10%;
                 > p {
                     font-size: 15px;
+                    font-weight: 700;
                     margin: 37px 15px 0 0;
                     float: right;
                 }
             }
         }
     }
-    footer {
-        position: relative;
-        bottom: 35px;
-    }
-}
-.card-button {
-    position: relative;
-    top: 40px;
-    margin-bottom: 20px;
-    width: 100%;
-    border: none;
-    display: flex;
-    justify-content: center;
 }

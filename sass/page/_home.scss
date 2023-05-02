@@ -3,8 +3,10 @@ form .title, .text {
     justify-content: center;
 }
 form {
+    background: $color-body;
     h2 {
         width: 275px;
+        font-style: 24px;
         font-weight: 700;
         text-align: center;
         margin: 39px 0 14px;
@@ -16,6 +18,7 @@ form {
     }
     p {
         font-size: 18px;
+        font-weight: 300;
         width: 315px;
         text-align: center;
         margin: 0 0 19px;
@@ -63,6 +66,8 @@ form {
             position: relative;
             right: 18px;
             p {
+                font-size: 16px;
+                font-weight: 500;
                 margin: 4px 0 0 7px;
             }
         }
@@ -73,36 +78,37 @@ form {
     font-weight: bold;
 }
 .restaurant {
+    background: $color-body;
     @media (min-width: 1440px) {
         width: 1088px;
         margin: auto;
     }
     h2 {
-        margin: 54px 0 20px 20px;
+        padding: 54px 0 20px 20px;
         @media (min-width: 1440px) {
             margin: 30px 0 0;
         }
     }
-    section {
+    a {
+        color: $color-black;
+        text-decoration: none;
+    }
+    img {
+        height: 174px;
+        margin: 0 17px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        @media (min-width: 1440px) {
+            width: 490px;
+            margin: 0;
+        }
+    }
+    &--desktop {
         @media (min-width: 1440px) {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
-        }
-        a {
-            color: $color-black;
-            text-decoration: none;
-        }
-        img {
-            height: 174px;
-            margin: 0 17px;
-            border-radius: 15px 15px 0 0;
-            object-fit: cover;
-            @media (min-width: 1440px) {
-                width: 490px;
-                margin: 0;
-            }
         }
     }
     &__card {
@@ -127,9 +133,13 @@ form {
                 width: 80%;
                 margin-left: 13px;
                 h3 {
+                    font-size: 18px;
+                    font-weight: 700;
                     padding-top: 16px;
                 }
                 p {
+                    font-size: 17px;
+                    font-weight: 300;
                     margin-top: 5px;
                 }
             }

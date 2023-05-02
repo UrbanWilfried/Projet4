@@ -3,6 +3,9 @@ body {
     flex-direction: column;
     background: $color-body;
 }
+main {
+    background: $color-white;
+}
 header {
     display: flex;
     justify-content: center;
