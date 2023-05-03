@@ -22,6 +22,7 @@
 .functioning-button {
     display: flex;
     align-items: center;
+    position: relative;
     height: 72px;
     border: none;
     border-radius: 20px;
@@ -32,6 +33,10 @@
         width: 31%;
         margin-bottom: 0;
     }
+}
+.functioning-button > p {
+    font-size: 16px;
+    font-weight: bold;
 }
 .card-button {
     position: relative;

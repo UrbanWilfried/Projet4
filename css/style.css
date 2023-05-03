@@ -33,6 +33,7 @@
 .functioning-button {
   display: flex;
   align-items: center;
+  position: relative;
   height: 72px;
   border: none;
   border-radius: 20px;
@@ -45,6 +46,11 @@
     width: 31%;
     margin-bottom: 0;
   }
+}
+
+.functioning-button > p {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .card-button {
@@ -280,7 +286,7 @@ form p {
 .functioning__content i {
   font-size: 18px;
   color: #9356DC;
-  margin-right: 20px;
+  margin: 0 20px 0 35px;
 }
 .functioning__content__number {
   font-size: 14px;
@@ -290,18 +296,13 @@ form p {
   background: #9356DC;
   border: none;
   border-radius: 12px;
-  position: relative;
-  right: 18px;
+  position: absolute;
+  left: -12px;
 }
 .functioning__content__number p {
   font-size: 16px;
   font-weight: 500;
   margin: 4px 0 0 7px;
-}
-
-.functioning-button > p {
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .restaurant {
@@ -384,12 +385,15 @@ form p {
   margin-top: 5px;
 }
 .restaurant__card__content__item {
-  width: 20%;
+  position: absolute;
+  right: 42px;
+  bottom: 50px;
 }
-.restaurant__card__content i {
+.restaurant__card__content__item i {
   font-size: 22px;
-  margin: 23px 25px 0 0;
-  float: right;
+}
+.restaurant__item {
+  position: relative;
 }
 
 .fond img {

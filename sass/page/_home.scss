@@ -53,7 +53,7 @@ form {
         i {
             font-size: 18px;
             color: $color-primaire;
-            margin-right: 20px;
+            margin: 0 20px 0 35px;
         }
         &__number {
             font-size: 14px;
@@ -63,8 +63,8 @@ form {
             background: $color-primaire;
             border: none;
             border-radius: 12px;
-            position: relative;
-            right: 18px;
+            position: absolute;
+            left: -12px;
             p {
                 font-size: 16px;
                 font-weight: 500;
@@ -72,10 +72,6 @@ form {
             }
         }
     }
-}
-.functioning-button > p {
-    font-size: 16px;
-    font-weight: bold;
 }
 .restaurant {
     background: $color-body;
@@ -144,13 +140,16 @@ form {
                 }
             }
             &__item {
-                width: 20%;
-            }
+                position: absolute;
+                right: 42px;
+                bottom: 50px;
                 i{
                     font-size: 22px;
-                    margin:23px 25px 0 0;
-                    float: right;
                 }
+            }
         }
+    }
+    &__item {
+        position: relative;
     }
 }
