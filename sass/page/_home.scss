@@ -139,12 +139,25 @@ form {
                     margin-top: 5px;
                 }
             }
-            &__item {
+            &__item1 {
+                font-size: 22px;
                 position: absolute;
                 right: 42px;
                 bottom: 50px;
-                i{
-                    font-size: 22px;
+            }
+            &__item2 {
+                font-size: 22px;
+                position: absolute;
+                right: 42px;
+                bottom: 50px;
+                transition: opacity 1000ms ease-in-out;
+                background-image: linear-gradient(to bottom, $color-primaire, $color-secondaire);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 0;
+                &:active {
+                    opacity: 1;
                 }
             }
         }

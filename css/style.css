@@ -1,3 +1,11 @@
+@keyframes heart-button {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -384,13 +392,26 @@ form p {
   font-weight: 300;
   margin-top: 5px;
 }
-.restaurant__card__content__item {
+.restaurant__card__content__item1 {
+  font-size: 22px;
   position: absolute;
   right: 42px;
   bottom: 50px;
 }
-.restaurant__card__content__item i {
+.restaurant__card__content__item2 {
   font-size: 22px;
+  position: absolute;
+  right: 42px;
+  bottom: 50px;
+  transition: opacity 1000ms ease-in-out;
+  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.restaurant__card__content__item2:active {
+  opacity: 1;
 }
 .restaurant__item {
   position: relative;
