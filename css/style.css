@@ -68,6 +68,31 @@
   background: #F7F7F7;
 }
 
+.restaurant__item {
+  position: relative;
+}
+.restaurant__item__item1 {
+  font-size: 22px;
+  position: absolute;
+  right: 42px;
+  bottom: 50px;
+}
+.restaurant__item__item2 {
+  font-size: 22px;
+  position: absolute;
+  right: 42px;
+  bottom: 50px;
+  transition: opacity 1000ms ease-in-out;
+  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.restaurant__item__item2:active {
+  opacity: 1;
+}
+
 footer {
   background: #353535;
   padding: 22px 25px;
@@ -388,29 +413,29 @@ form p {
   font-weight: 300;
   margin-top: 5px;
 }
-.restaurant__card__content__item1 {
-  font-size: 22px;
+.restaurant__card__content__new {
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+  text-align: center;
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px #262626;
   position: absolute;
-  right: 42px;
-  bottom: 50px;
+  right: 31px;
+  top: 13px;
 }
-.restaurant__card__content__item2 {
-  font-size: 22px;
-  position: absolute;
-  right: 42px;
-  bottom: 50px;
-  transition: opacity 1000ms ease-in-out;
-  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
+.restaurant__card__content__new > p {
+  margin-top: 7px;
 }
-.restaurant__card__content__item2:active {
-  opacity: 1;
-}
-.restaurant__item {
-  position: relative;
+@media (min-width: 1440px) {
+  .restaurant__card__content__new {
+    position: absolute;
+    right: 18px;
+    top: 40px;
+  }
 }
 
 .fond img {
