@@ -93,6 +93,53 @@
   opacity: 1;
 }
 
+.card__menu__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #FFFFFF;
+  margin-top: 12px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4.01149px 15.0431px #1a1a1a;
+}
+.card__menu__content:active .card__menu__content__check {
+  display: block;
+}
+.card__menu__content__list {
+  width: 90%;
+}
+.card__menu__content__list h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 12px 0 0 15px;
+}
+.card__menu__content__list > p {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 5px 0 12px 15px;
+}
+.card__menu__content__price {
+  width: 10%;
+}
+.card__menu__content__price > p {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 37px 15px 0 0;
+  float: right;
+}
+.card__menu__content__check {
+  width: 59px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  display: none;
+}
+.card__menu__content__check > i {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 24px 19px;
+}
+
 footer {
   background: #353535;
   padding: 22px 25px;
@@ -468,6 +515,20 @@ form p {
   position: relative;
   top: 15px;
 }
+.card__title > i {
+  font-size: 22px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 41px 0 0;
+  width: 10%;
+  float: right;
+}
+@media (min-width: 1440px) {
+  .card__title > i {
+    width: 46px;
+    margin: 46px 0 0;
+  }
+}
 @media (min-width: 1440px) {
   .card__title {
     justify-content: center;
@@ -482,22 +543,8 @@ form p {
 }
 @media (min-width: 1440px) {
   .card h1 {
-    width: 261px;
+    width: 267px;
     margin: 36px 0 0;
-  }
-}
-.card i {
-  font-size: 22px;
-  display: flex;
-  justify-content: flex-end;
-  margin: 25px 41px 0 0;
-  width: 10%;
-  float: right;
-}
-@media (min-width: 1440px) {
-  .card i {
-    width: 46px;
-    margin: 46px 0 0;
   }
 }
 .card__menu {
@@ -520,37 +567,6 @@ form p {
   width: 40px;
   height: 6px;
   border-bottom: 3px solid #99E2D0;
-}
-.card__menu__content {
-  display: flex;
-  width: 100%;
-  background: #FFFFFF;
-  margin-top: 12px;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 4.01149px 15.0431px #1a1a1a;
-}
-.card__menu__content__list {
-  width: 90%;
-}
-.card__menu__content__list h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 12px 0 0 15px;
-}
-.card__menu__content__list > p {
-  font-size: 15px;
-  font-weight: 300;
-  margin: 5px 0 12px 15px;
-}
-.card__menu__content__price {
-  width: 10%;
-}
-.card__menu__content__price > p {
-  font-size: 15px;
-  font-weight: 700;
-  margin: 37px 15px 0 0;
-  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */

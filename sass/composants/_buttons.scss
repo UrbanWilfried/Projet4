@@ -78,3 +78,54 @@
         }
     }
 }
+.card {
+    &__menu {
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background: $color-white;
+            margin-top: 12px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4.01149px 15.0431px lighten($color-black, 10%);
+            &:active &__check {
+                display: block;
+                
+            }
+            &__list {
+                width: 90%;
+                h3 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin: 12px 0 0 15px;
+                }
+                > p {
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin: 5px 0 12px 15px;
+                }
+            }
+            &__price {
+                width: 10%;
+                > p {
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin: 37px 15px 0 0;
+                    float: right;
+                }
+            }
+            &__check {
+                width: 59px;
+                background-color: $color-tertiaire;
+                border-radius: 0 15px 15px 0;
+                display: none;
+                & > i {
+                    font-size: 20px;
+                    color: $color-white;
+                    margin: 24px 19px;
+                }
+            }
+        }
+    }
+}
