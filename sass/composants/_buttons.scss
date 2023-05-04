@@ -96,21 +96,33 @@
             &:active &__price {
                 transform: translateX(-100%);
             }
+            &:active &__list {
+                @media (max-width: 450px) {
+                    width: 231px;
+                }
+            }
             &__list {
-                width: 90%;
+                width: 340px;
+                white-space: nowrap;
+                overflow: hidden;
                 h3 {
                     font-size: 18px;
                     font-weight: 700;
                     margin: 12px 0 0 15px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
                 > p {
                     font-size: 15px;
                     font-weight: 300;
                     margin: 5px 0 12px 15px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
             &__price {
-                width: 10%;
+                width: 59px;
+                height: 100%;
                 position: absolute;
                 right: 0px;
                 transform-origin: 100% 50%;

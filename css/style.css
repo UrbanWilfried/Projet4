@@ -110,21 +110,33 @@
 .card__menu__content:active .card__menu__content__price {
   transform: translateX(-100%);
 }
+@media (max-width: 450px) {
+  .card__menu__content:active .card__menu__content__list {
+    width: 231px;
+  }
+}
 .card__menu__content__list {
-  width: 90%;
+  width: 340px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .card__menu__content__list h3 {
   font-size: 18px;
   font-weight: 700;
   margin: 12px 0 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card__menu__content__list > p {
   font-size: 15px;
   font-weight: 300;
   margin: 5px 0 12px 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card__menu__content__price {
-  width: 10%;
+  width: 59px;
+  height: 100%;
   position: absolute;
   right: 0px;
   transform-origin: 100% 50%;
