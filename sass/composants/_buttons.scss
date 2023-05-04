@@ -83,6 +83,7 @@
         &__content {
             display: flex;
             justify-content: space-between;
+            position: relative;
             width: 100%;
             background: $color-white;
             margin-top: 12px;
@@ -90,8 +91,10 @@
             border-radius: 15px;
             box-shadow: 0 4.01149px 15.0431px lighten($color-black, 10%);
             &:active &__check {
-                display: block;
-                
+                transform: scaleX(1) ;
+            }
+            &:active &__price {
+                transform: translateX(-100%);
             }
             &__list {
                 width: 90%;
@@ -108,6 +111,11 @@
             }
             &__price {
                 width: 10%;
+                position: absolute;
+                right: 0px;
+                transform-origin: 100% 50%;
+                transform: translateX(0%);
+                transition: transform 1000ms ease-in-out;
                 > p {
                     font-size: 15px;
                     font-weight: 700;
@@ -119,7 +127,9 @@
                 width: 59px;
                 background-color: $color-tertiaire;
                 border-radius: 0 15px 15px 0;
-                display: none;
+                transform-origin: 100% 50%;
+                transform: scaleX(0);
+                transition: transform 1000ms ease-in-out;
                 & > i {
                     font-size: 20px;
                     color: $color-white;
