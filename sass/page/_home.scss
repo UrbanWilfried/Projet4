@@ -6,7 +6,7 @@ form {
     background: $color-body;
     h2 {
         width: 275px;
-        font-style: 24px;
+        font-size: 24px;
         font-weight: 700;
         text-align: center;
         margin: 39px 0 14px;
@@ -169,7 +169,7 @@ form {
     height: 100vh;
     background-color: $color-white;
     position: fixed;
-    animation: hideden-loader 6000ms forwards;
+    animation: hideden-loader 3000ms forwards;
     
     z-index: 1;
     & > p {

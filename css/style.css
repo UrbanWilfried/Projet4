@@ -21,6 +21,14 @@
     opacity: 0;
   }
 }
+@keyframes card-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -351,7 +359,7 @@ form {
 }
 form h2 {
   width: 275px;
-  font-style: 24px;
+  font-size: 24px;
   font-weight: 700;
   text-align: center;
   margin: 39px 0 14px;
@@ -536,7 +544,7 @@ form p {
   height: 100vh;
   background-color: #FFFFFF;
   position: fixed;
-  animation: hideden-loader 6000ms forwards;
+  animation: hideden-loader 3000ms forwards;
   z-index: 1;
 }
 .loader > p {
@@ -642,6 +650,37 @@ form p {
   width: 40px;
   height: 6px;
   border-bottom: 3px solid #99E2D0;
+}
+
+.load__entree__1 {
+  animation: card-load 4500ms both;
+}
+.load__entree__2 {
+  animation: card-load 4500ms 500ms both;
+}
+.load__entree__3 {
+  animation: card-load 4500ms 1000ms both;
+}
+.load__entree__4 {
+  animation: card-load 4500ms 1300ms both;
+}
+.load__dish__1 {
+  animation: card-load 4500ms 1500ms both;
+}
+.load__dish__2 {
+  animation: card-load 4500ms 2000ms both;
+}
+.load__dish__3 {
+  animation: card-load 4500ms 2500ms both;
+}
+.load__dessert__1 {
+  animation: card-load 4500ms 3000ms both;
+}
+.load__dessert__2 {
+  animation: card-load 4500ms 3500ms both;
+}
+.load__dessert__3 {
+  animation: card-load 4500ms 4000ms both;
 }
 
 /*# sourceMappingURL=style.css.map */
