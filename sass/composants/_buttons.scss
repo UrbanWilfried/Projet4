@@ -55,13 +55,13 @@
 .restaurant {
     &__item {
         position: relative;
-        &__item1 {
+        &__heart-empty {
             font-size: 22px;
             position: absolute;
             right: 42px;
             bottom: 50px;
         }
-        &__item2 {
+        &__heart-filled {
             font-size: 22px;
             position: absolute;
             right: 42px;

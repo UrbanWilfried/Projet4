@@ -99,7 +99,31 @@ form {
             margin: 0;
         }
     }
-    &--desktop {
+    &__item {
+        &__new {
+            font-size: 14px;
+            font-weight: 500;
+            color: $color-new;
+            text-align: center;
+            width: 80px;
+            height: 29px;
+            background-color: $color-tertiaire;
+            border-radius: 2px;
+            box-shadow: 0px 2px 4px lighten($color-black, 15%);
+            position: absolute;
+            right: 31px;
+            top: 13px;
+            &>p {
+                margin-top: 7px;
+            }
+            @media (min-width: 1440px) {
+                position: absolute;
+                right: 18px;
+                top: 40px;
+            }
+        }
+    }
+    &__desktop {
         @media (min-width: 1440px) {
             display: flex;
             flex-direction: row;
@@ -139,28 +163,7 @@ form {
                     margin-top: 5px;
                 }
             }
-            &__new {
-                font-size: 14px;
-                font-weight: 500;
-                color: $color-new;
-                text-align: center;
-                width: 80px;
-                height: 29px;
-                background-color: $color-tertiaire;
-                border-radius: 2px;
-                box-shadow: 0px 2px 4px lighten($color-black, 15%);
-                position: absolute;
-                right: 31px;
-                top: 13px;
-                &>p {
-                    margin-top: 7px;
-                }
-                @media (min-width: 1440px) {
-                    position: absolute;
-                    right: 18px;
-                    top: 40px;
-                }
-            }
+            
         }
     }
 }
