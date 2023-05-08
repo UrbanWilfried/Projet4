@@ -2,9 +2,11 @@
 @import "./utils/_mixins";
 @import "./utils/_placeholders";
 @import "./utils/_variables";
+@import "./base/base";
 @import "./base/_reset";
 @import "./base/_typography";
 @import "./composants/_buttons";
+@import "./composants/composants";
 @import "./layout/_footer";
 @import "./layout/_forms";
 @import "./layout/_header";

@@ -1,0 +1,62 @@
+.form-button {
+    border: none;
+    margin-bottom: 57px;
+    text-align: center;
+    @media (min-width: 1440px) {
+        margin-bottom: 30px;
+    }
+}
+.functioning-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 72px;
+    border: none;
+    border-radius: 20px;
+    box-shadow:  0px 4px 15px rgba(0,0,0,0.15) ;
+    margin-bottom: 25px;
+    background: $color-body;
+    @media (min-width: 1440px) {
+        width: 31%;
+        margin-bottom: 0;
+    }
+}
+.functioning-button > p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.card-button {
+    position: relative;
+    top: 55px;
+    padding-bottom: 40px;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    background: $color-body;
+}
+.card {
+    &__menu {
+        &__content {
+            &__list {
+                width: 340px;
+                white-space: nowrap;
+                overflow: hidden;
+                h3 {
+                    font-size: 18px;
+                    font-weight: 900;
+                    margin: 12px 0 0 15px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                > p {
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin: 5px 0 12px 15px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}

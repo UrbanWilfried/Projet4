@@ -1,4 +1,4 @@
-main {
+.home {
     h1 {
         display: none;
     }
@@ -79,15 +79,18 @@ form {
     }
 }
 .restaurant {
+    width: 100%;
     background: $color-body;
-    @media (min-width: 1440px) {
-        width: 1088px;
-        margin: auto;
+    &__title {
+        @media (min-width: 1440px) {
+            width: 1080px;
+            margin: auto;
+        }
     }
     h2 {
         padding: 54px 0 20px 20px;
         @media (min-width: 1440px) {
-            margin: 30px 0 0;
+            padding: 30px 0 8px;
         }
     }
     a {
@@ -110,17 +113,13 @@ form {
             font-weight: 500;
             color: $color-new;
             text-align: center;
-            width: 80px;
-            height: 29px;
+            padding: 7px 9px;
             background-color: $color-tertiaire;
             border-radius: 2px;
             box-shadow: 0px 2px 4px lighten($color-black, 15%);
             position: absolute;
             right: 31px;
             top: 13px;
-            &>p {
-                margin-top: 7px;
-            }
             @media (min-width: 1440px) {
                 position: absolute;
                 right: 18px;
@@ -128,12 +127,12 @@ form {
             }
         }
     }
-    &__desktop {
+    &__page {
         @media (min-width: 1440px) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 490px 490px;
+            gap: 0 100px;
+            justify-content: center;
         }
     }
     &__card {
@@ -141,15 +140,13 @@ form {
         flex-direction: column;
         @media (min-width: 1440px) {
             width: 490px;
-            margin: 27px 0 30px 0;
+            margin: 20px 0 30px;
         }
         &__content {
             height: 77px;
             margin: 0 17px 17px;
             border-radius: 0 0 15px 15px;
             background: $color-white;
-            display: flex;
-            flex-direction: row;
             @media (min-width: 1440px) {
                 width: 490px;
                 margin: 0;
@@ -159,7 +156,7 @@ form {
                 margin-left: 13px;
                 h3 {
                     font-size: 18px;
-                    font-weight: 700;
+                    font-weight: 900;
                     padding-top: 16px;
                 }
                 p {
