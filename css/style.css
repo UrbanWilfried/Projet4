@@ -211,7 +211,7 @@ main {
 
 .functioning-button > p {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .card-button {
@@ -232,7 +232,7 @@ main {
 }
 .card__menu__content__list h3 {
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 500;
   margin: 12px 0 0 15px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -279,14 +279,16 @@ footer img {
   }
 }
 .footer__nav__text {
-  font-size: 16px;
-  font-weight: 500;
   margin-bottom: 7px;
 }
+.footer__nav__text a {
+  font-weight: 500;
+}
 .footer__nav__text__blod {
-  font-size: 16px;
-  font-weight: 400;
   margin-bottom: 7px;
+}
+.footer__nav__text__blod a {
+  font-weight: 400;
 }
 @media (min-width: 1440px) {
   .footer__nav__text a {
@@ -338,6 +340,7 @@ form {
 }
 .form__content__text {
   font-size: 16px;
+  font-weight: 500;
   border: none;
   background: #EAEAEA;
   width: 109px;
@@ -431,6 +434,8 @@ form p {
   background: #FFFFFF;
 }
 .functioning h2 {
+  font-size: 24px;
+  font-weight: 700;
   margin: 0 0 26px 20px;
   padding-top: 48px;
 }
@@ -472,7 +477,7 @@ form p {
   left: -12px;
 }
 .functioning__content__number p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   margin: 4px 0 0 7px;
 }
@@ -488,6 +493,8 @@ form p {
   }
 }
 .restaurant h2 {
+  font-size: 24px;
+  font-weight: 700;
   padding: 54px 0 20px 20px;
 }
 @media (min-width: 1440px) {
@@ -567,7 +574,7 @@ form p {
 }
 .restaurant__card__content__list h3 {
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 700;
   padding-top: 16px;
 }
 .restaurant__card__content__list p {
