@@ -85,7 +85,7 @@ main {
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.restaurant__item__heart-filled:active {
+.restaurant__item__heart-filled:hover {
   opacity: 1;
 }
 
@@ -100,14 +100,14 @@ main {
   border-radius: 15px;
   box-shadow: 0 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
-.card__menu__content:active .card__menu__content__check {
+.card__menu__content:hover .card__menu__content__check {
   transform: scaleX(1);
 }
-.card__menu__content:active .card__menu__content__price {
+.card__menu__content:hover .card__menu__content__price {
   transform: translateX(-100%);
 }
 @media (max-width: 450px) {
-  .card__menu__content:active .card__menu__content__list {
+  .card__menu__content:hover .card__menu__content__list {
     width: 231px;
   }
 }
@@ -176,7 +176,7 @@ main {
     right: 371px;
   }
 }
-.card__heart-filled:active {
+.card__heart-filled:hover {
   opacity: 1;
 }
 

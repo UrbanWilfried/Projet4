@@ -35,7 +35,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 0;
-            &:active {
+            &:hover {
                 opacity: 1;
             }
         }
@@ -53,13 +53,13 @@
             border: none;
             border-radius: 15px;
             box-shadow: 0 4.01149px 15.0431px rgba(0,0,0,0.1);
-            &:active &__check {
+            &:hover &__check {
                 transform: scaleX(1) ;
             }
-            &:active &__price {
+            &:hover &__price {
                 transform: translateX(-100%);
             }
-            &:active &__list {
+            &:hover &__list {
                 @media (max-width: 450px) {
                     width: 231px;
                 }
@@ -126,7 +126,7 @@
             margin: 46px 0 0;
             right: 371px;
         }
-        &:active {
+        &:hover {
             opacity: 1;
         }
     }
